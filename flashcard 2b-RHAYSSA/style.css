@@ -1,5 +1,13 @@
+:root{
+    --texto-principal:#4a0075;
+    --texto-pergunta:#4a0358;
+    --texto-resposta:#000000;
+}
+
 body {
-    background-color: rgb(240, 190, 252);
+    background: url(unicornio-de-desenho-animado-em-3d_23-2151800443\ -\ Copia.avif);
+   background-repeat: no-repeat;
+   background-size: 120%;
     font-family: Bai Jamjuree;
 }
 
@@ -9,7 +17,8 @@ body {
 
 .cartao {
  margin: 1rem 1rem;
- background-color: rgb(245, 185, 252);
+ color: var(--texto-principal);
+border: 1px solid var(--texto-principal);
  height: 20rem;
  flex-grow: 1;
  flex-basis: calc(33% - 6rem);
@@ -18,18 +27,32 @@ body {
 
 .cartao__conteudo {
     text-align: center;
-    background-color: rgb(237, 208, 250);
+    color: var(--texto-principal);
+   border: 1px solid var(--texto-principal);
     height: 100%;
 }
 
 .cartao__conteudo h3 {
-    background-color: rgb(215, 165, 255);
+   color: var(--texto-principal);
+   border: 1px solid var(--texto-principal);
     text-align: left;
     padding: 0.5rem;
     position: absolute;
     margin: 0.6rem;
     border-radius: 0.6rem;
     font-size: 1vw;
+}
+
+.cartao__conteudo__pergunta p{
+    color: var(--texto-pergunta);
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.cartao__conteudo__resposta p{
+    color: var(--texto-resposta);
+    font-weight: 900;
+    font-size: 24px;
 }
 
 
